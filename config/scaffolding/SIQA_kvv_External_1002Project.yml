@@ -7,6 +7,19 @@ packages:
   gitUrl: https://github.com/Karthik-V-IBM-10
   gitUsername: Karthik-V-IBM-10
   gitBranch: main
+services:
+- serviceName: project.siqa_kvv_external_1002.integrations:refdaf
+  packages:
+  - name: SIQA_kvv_External_1002Project
+    version: "1.0"
+- serviceName: project.siqa_kvv_external_1002.referencedata:ref1_txt
+  packages:
+  - name: SIQA_kvv_External_1002Project
+    version: "1.0"
+- serviceName: project.siqa_kvv_external_1002.referencedata:ref2_csv
+  packages:
+  - name: SIQA_kvv_External_1002Project
+    version: "1.0"
 configurationVariables:
   jdbc.jdbcTestPool.waitingThread: "0"
   jdbc.jdbcTestPool.minConns: "0"
